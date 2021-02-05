@@ -1,13 +1,12 @@
-# App definition
-region: EU
 app:
-  key:
-    name: test-github-edgebox
-    version: "1.0"
-    organization: VenkyDev
-  image_path: docker-stage.mobiledgex.net/venkydev/images/test-github-edgebox
-  image_type: 1
-  deployment: kubernetes
+  access_ports: tcp:5678
   default_flavor:
     name: m4.small
-  access_ports: "tcp:5678"
+  deployment: kubernetes
+  image_path: docker-stage.mobiledgex.net/venkydev/images/test-github-edgebox
+  image_type: 1
+  key:
+    name: test-github-edgebox
+    organization: VenkyDev
+    version: '1.0'
+region: EU

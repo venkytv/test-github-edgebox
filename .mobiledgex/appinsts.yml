@@ -1,10 +1,9 @@
-# App deployment details
 - appinst:
     key:
       cluster_inst_key:
-        cluster_key:
-          name: venky-edgebox-clust
         cloudlet_key:
           name: hackathon-venky
           organization: mex
+        cluster_key:
+          name: autocluster-test-github-edgebox
         organization: VenkyDev
