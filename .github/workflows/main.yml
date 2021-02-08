@@ -16,7 +16,7 @@ jobs:
         username: ${{ secrets.MOBILEDGEX_USERNAME }}
     - id: deploy
       name: Deploy to MobiledgeX
-      uses: mobiledgex/deploy-app-action@v1.0
+      uses: mobiledgex/deploy-app-action@v1.1-rc1
       with:
         password: ${{ secrets.MOBILEDGEX_PASSWORD }}
         setup: stage

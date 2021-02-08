@@ -5,5 +5,5 @@
           name: hackathon-venky
           organization: mex
         cluster_key:
-          name: autocluster-test-github-edgebox
+          name: test-github-edgebox-cluster
         organization: VenkyDev
