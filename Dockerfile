@@ -1,3 +1,3 @@
 FROM hashicorp/http-echo:latest
 
-CMD ["-text=bar"]
+CMD ["-text=github-cicd"]
