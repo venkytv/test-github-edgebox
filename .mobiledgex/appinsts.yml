@@ -2,7 +2,7 @@
     key:
       cluster_inst_key:
         cloudlet_key:
-          name: hackathon-venky
+          name: edgebox-venky
           organization: mex
         cluster_key:
           name: test-github-edgebox-cluster
