@@ -1,0 +1,9 @@
+- appinst:
+    key:
+      cluster_inst_key:
+        cloudlet_key:
+          name: hackathon-venky
+          organization: mex
+        cluster_key:
+          name: test-github-edgebox-cluster
+        organization: VenkyDev
