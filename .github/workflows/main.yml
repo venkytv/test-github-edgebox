@@ -1,0 +1,32 @@
+# WORKFLOW-VERSION:1.0
+jobs:
+  deploy_to_main:
+    name: Deploy app to the MobiledgeX main setup
+    runs-on: ubuntu-latest
+    steps:
+    - id: checkout
+      name: Check out the repo
+      uses: actions/checkout@v2
+    - id: push
+      name: Push to Docker Registry
+      uses: docker/build-push-action@v1
+      with:
+        password: ${{ secrets.MOBILEDGEX_PASSWORD }}
+        registry: docker-stage.mobiledgex.net
+        repository: venkydev/images/test-github-edgebox
+        tag_with_ref: true
+        username: ${{ secrets.MOBILEDGEX_USERNAME }}
+    - id: deploy
+      name: Deploy to MobiledgeX
+      uses: mobiledgex/deploy-app-action@v1.2
+      with:
+        password: ${{ secrets.MOBILEDGEX_PASSWORD }}
+        setup: stage
+        username: ${{ secrets.MOBILEDGEX_USERNAME }}
+    - name: Print output
+      run: echo "Image ${{ steps.deploy.outputs.image }}, Deployments ${{ steps.deploy.outputs.deployments
+        }}"
+'on':
+  release:
+    types:
+    - published
