@@ -3,10 +3,10 @@ app:
   default_flavor:
     name: m4.small
   deployment: kubernetes
-  image_path: docker-stage.mobiledgex.net/venkydev/images/test-github-edgebox
+  image_path: docker.mobiledgex.net/demoorg/images/test-github-edgebox
   image_type: 1
   key:
     name: test-github-edgebox
-    organization: VenkyDev
+    organization: demoorg
     version: '1.0'
 region: EU
