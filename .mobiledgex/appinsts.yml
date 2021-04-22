@@ -2,8 +2,8 @@
     key:
       cluster_inst_key:
         cloudlet_key:
-          name: frankfurt-main
-          organization: TDG
+          name: edgebox-venky
+          organization: EdgeBoxOrg
         cluster_key:
           name: test-github-edgebox-cluster
         organization: demoorg
