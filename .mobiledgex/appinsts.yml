@@ -2,8 +2,8 @@
     key:
       cluster_inst_key:
         cloudlet_key:
-          name: edgebox-venky
-          organization: EdgeBoxOrg
+          name: edgebox-venky-dev
+          organization: edgebox-venky-dev-org
         cluster_key:
           name: test-github-edgebox-cluster
         organization: demoorg
