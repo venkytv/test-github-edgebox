@@ -5,5 +5,5 @@
           name: edgebox-venky-dev-2
           organization: edgebox-venky-dev-org
         cluster_key:
-          name: test-github-edgebox-cluster
+          name: venedgeclust2
         organization: demoorg
